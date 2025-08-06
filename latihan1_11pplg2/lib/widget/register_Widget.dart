@@ -6,7 +6,8 @@ import 'package:intl/intl.dart';
 class Inputform extends StatelessWidget {
   final String input;
   final TextEditingController controller;
-  const Inputform({super.key, required this.input, required this.controller});
+  final bool isShow;
+  const Inputform({super.key, required this.input, required this.controller, required this.isShow});
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +16,7 @@ class Inputform extends StatelessWidget {
       child: TextField(
         controller: controller,
         textAlign: TextAlign.center,
+        obscureText: isShow,
         decoration: InputDecoration(
           labelText: input,
           border: OutlineInputBorder(
@@ -140,15 +142,14 @@ class _DatePickerState extends State<DatePicker> {
 
 class Button extends StatelessWidget {
   String buttonName;
-  Button({super.key, required this.buttonName});
+  final VoidCallback pressed;
+  Button({super.key, required this.buttonName, required this.pressed});
 
   @override
   Widget build(BuildContext context) {
     return Container(
       child: ElevatedButton(
-        onPressed:() {
-          
-        },
+        onPressed: pressed,
          child: Text(buttonName)),
     );
   }

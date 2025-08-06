@@ -40,11 +40,11 @@ class _RegisterPageState extends State<RegisterPage> {
 
             Inputform(
               input: "Username",
-              controller: nameController),
+              controller: nameController, isShow: false,),
             Inputform(input: "Email",
-            controller: emailController),
+            controller: emailController, isShow: false,),
             Inputform(input: "Password", 
-            controller: passwordController),
+            controller: passwordController, isShow: true,),
         
             
             GenderPick(
@@ -64,7 +64,9 @@ class _RegisterPageState extends State<RegisterPage> {
                 });
               }),
             
-            Button(buttonName: 'Register sekarang')
+            Button(buttonName: 'Register sekarang', pressed: () {
+              
+            },)
           ],
         ),
       )
