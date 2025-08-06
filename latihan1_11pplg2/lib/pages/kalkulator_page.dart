@@ -19,14 +19,16 @@ class Calculator extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Inputform(input: "Angka 1", controller: calculatorController.txtangka1, isShow: false),
-            Inputform(input: "Angka 2", controller: calculatorController.txtangka2, isShow: false),
+            Inputform(input: "Angka 1", controller: calculatorController.txtangka1, isShow: false, isNumber: true,),
+            Inputform(input: "Angka 2", controller: calculatorController.txtangka2, isShow: false, isNumber: true,),
 
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Button(buttonName: "+", pressed:() {calculatorController.tambah();}),
-                Button(buttonName: "-", pressed:() {calculatorController.kurang();}),
+                Button(buttonName: "-", 
+                pressed:() {calculatorController.kurang();}
+                ),
 
               ],
             ),

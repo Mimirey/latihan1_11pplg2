@@ -40,11 +40,11 @@ class _RegisterPageState extends State<RegisterPage> {
 
             Inputform(
               input: "Username",
-              controller: nameController, isShow: false,),
+              controller: nameController, isShow: false,isNumber: false,),
             Inputform(input: "Email",
-            controller: emailController, isShow: false,),
+            controller: emailController, isShow: false,isNumber: false,),
             Inputform(input: "Password", 
-            controller: passwordController, isShow: true,),
+            controller: passwordController, isShow: true,isNumber: false,),
         
             
             GenderPick(
