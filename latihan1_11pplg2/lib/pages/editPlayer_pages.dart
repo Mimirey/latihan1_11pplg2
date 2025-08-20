@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:latihan1_11pplg2/controller/editPlayer_controller.dart';
 import 'package:latihan1_11pplg2/widget/Input.dart';
+import 'package:latihan1_11pplg2/widget/navbar.dart';
 import 'package:latihan1_11pplg2/widget/register_Widget.dart';
 
 class EditplayerPages extends StatelessWidget {
@@ -31,6 +32,7 @@ class EditplayerPages extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: CustomNavbar(),
     );
   }
 }

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:latihan1_11pplg2/controller/football_controller.dart';
 import 'package:latihan1_11pplg2/routes/routes.dart';
+import 'package:latihan1_11pplg2/widget/navbar.dart';
 
 class FootballPage extends StatelessWidget {
   final FootballController footballController= Get.put(FootballController());
@@ -36,6 +37,7 @@ class FootballPage extends StatelessWidget {
 
         ))
       ),
+      bottomNavigationBar: CustomNavbar(),
     );
   }
 }

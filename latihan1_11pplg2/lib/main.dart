@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'package:latihan1_11pplg2/controller/buttomNav_controller.dart';
 import 'package:latihan1_11pplg2/controller/football_controller.dart';
 import 'package:latihan1_11pplg2/pages.dart';
 import 'package:latihan1_11pplg2/pages/kalkulator_page.dart';
@@ -10,6 +11,7 @@ import 'login_page.dart';
 
 void main() {
   Get.put(FootballController());
+  Get.put(NavbarController());
   runApp(const MyApp());
 }
 
