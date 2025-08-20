@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
 import 'package:latihan1_11pplg2/controller/kalkulator_controller.dart';
 import 'package:latihan1_11pplg2/routes/routes.dart';
+import 'package:latihan1_11pplg2/widget/navbar.dart';
 import 'package:latihan1_11pplg2/widget/register_Widget.dart';
 
 class Calculator extends StatelessWidget {
@@ -48,6 +49,7 @@ class Calculator extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: CustomNavbar(),
     );
   }
 }
