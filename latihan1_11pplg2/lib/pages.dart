@@ -4,6 +4,7 @@ import 'package:latihan1_11pplg2/binding/EditPlayerBinding.dart';
 import 'package:latihan1_11pplg2/pages/editPlayer_pages.dart';
 import 'package:latihan1_11pplg2/pages/football_page.dart';
 import 'package:latihan1_11pplg2/pages/kalkulator_page.dart';
+import 'package:latihan1_11pplg2/pages/mainMenu_page.dart';
 import 'package:latihan1_11pplg2/pages/profile_page.dart';
 import 'package:latihan1_11pplg2/routes/routes.dart';
 class AppPages{
@@ -11,6 +12,7 @@ class AppPages{
     GetPage(name: AppRoutes.calculatorPage, page:()=> Calculator()),
     GetPage(name: AppRoutes.footballPage, page:()=>FootballPage()),
     GetPage(name: AppRoutes.editPlayerPages, page: ()=>EditplayerPages(), binding: EditPlayerbinding()),
-    GetPage(name: AppRoutes.profilePage, page: ()=> ProfilePage())
+    GetPage(name: AppRoutes.profilePage, page: ()=> ProfilePage()),
+    GetPage(name: AppRoutes.mainmenuPage, page: ()=> MainMenuPage())
   ];
 }
