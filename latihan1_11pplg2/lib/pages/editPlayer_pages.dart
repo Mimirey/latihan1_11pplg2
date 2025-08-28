@@ -32,7 +32,7 @@ class EditplayerPages extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: CustomNavbar(),
+      
     );
   }
 }

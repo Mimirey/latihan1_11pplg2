@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:latihan1_11pplg2/controller/football_controller.dart';
 import 'package:latihan1_11pplg2/routes/routes.dart';
-import 'package:latihan1_11pplg2/widget/navbar.dart';
 
-class FootballPage extends StatelessWidget {
-  final FootballController footballController= Get.put(FootballController());
-  FootballPage({super.key});
+class HomeFragment extends StatelessWidget {
+  HomeFragment({super.key});
+final FootballController footballController= Get.put(FootballController());
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("List Pemain-pemain"),),
+      appBar: AppBar(title: Text("List Pemain"),),
       body: Container(
         margin: EdgeInsets.all(30),
         child: Obx(()=> ListView.builder(
@@ -37,7 +37,6 @@ class FootballPage extends StatelessWidget {
 
         ))
       ),
-      
     );
   }
 }

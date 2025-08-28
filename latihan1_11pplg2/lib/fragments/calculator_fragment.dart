@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:get/get_state_manager/src/rx_flutter/rx_obx_widget.dart';
 import 'package:latihan1_11pplg2/controller/kalkulator_controller.dart';
 import 'package:latihan1_11pplg2/routes/routes.dart';
 import 'package:latihan1_11pplg2/widget/navbar.dart';
 import 'package:latihan1_11pplg2/widget/register_Widget.dart';
 
-class Calculator extends StatelessWidget {
-  
-  Calculator({super.key});
-  final CalculatorController calculatorController= Get.put(CalculatorController());
+class CalculatorFragment extends StatelessWidget {
+CalculatorFragment({super.key});
+final CalculatorController calculatorController = Get.put(CalculatorController());
 
 
   @override
@@ -45,11 +45,10 @@ class Calculator extends StatelessWidget {
               return Text("Hasil : " +calculatorController.textHasil.value);
             }),
             Button(buttonName: "Clear", pressed: (){calculatorController.clear();}),
-            Button(buttonName: "Pindah halaman", pressed: (){Get.toNamed(AppRoutes.mainmenuPage);}),
+            Button(buttonName: "Pindah halaman", pressed: (){Get.toNamed(AppRoutes.footballPage);}),
           ],
         ),
       ),
-      
     );
   }
 }

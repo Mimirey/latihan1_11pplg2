@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:latihan1_11pplg2/widget/navbar.dart';
 import 'package:latihan1_11pplg2/widget/textInfo.dart';
 
-class ProfilePage extends StatelessWidget {
-  const ProfilePage({super.key});
+class ProfileFragment extends StatelessWidget {
+  const ProfileFragment({super.key});
 
   @override
   Widget build(BuildContext context) {
