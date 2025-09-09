@@ -5,7 +5,7 @@ class EditPlayerbinding extends Bindings {
   @override
   void dependencies() {
     int index= Get.arguments;
-    Get.put(EditplayerController(index));
+    Get.put(EditplayerController());
   }
 
 }

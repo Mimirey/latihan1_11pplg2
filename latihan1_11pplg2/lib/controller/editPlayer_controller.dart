@@ -6,13 +6,13 @@ import 'package:latihan1_11pplg2/model/football_model.dart';
 
 class EditplayerController extends GetxController{
   final FootballController footballController= Get.find<FootballController>();
-  final int? index;
+  final int index= Get.arguments;
   late TextEditingController namaEditingController;
   late TextEditingController posisiEditingController;
   late TextEditingController nomorEditingController;
   late TextEditingController fotoEditingController;
 
-EditplayerController([this.index]);
+  EditplayerController();
 
   @override
   void onInit() {
@@ -30,7 +30,6 @@ EditplayerController([this.index]);
     );
      fotoEditingController = TextEditingController(text: footballController.players[index!].foto);
     } else {
-     
       namaEditingController = TextEditingController();
       posisiEditingController = TextEditingController();
       nomorEditingController = TextEditingController();

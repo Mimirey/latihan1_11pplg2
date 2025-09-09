@@ -27,9 +27,7 @@ final FootballController footballController= Get.put(FootballController());
               title: Text(footballController.players[index].nama),
               subtitle: Text(
                 "Posisi ${footballController.players[index].posisi} - No : ${footballController.players[index].nomor}",
-          
               ),
-              
               onTap: ()=>{Get.toNamed(AppRoutes.editPlayerPages, arguments: index)},
             );
           },

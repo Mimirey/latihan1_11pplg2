@@ -13,7 +13,7 @@ class EditplayerPages extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final int index= Get.arguments;
+    
     final editplayerController= Get.put(EditplayerController());
     
 

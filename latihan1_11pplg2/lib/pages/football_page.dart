@@ -5,7 +5,8 @@ import 'package:latihan1_11pplg2/routes/routes.dart';
 import 'package:latihan1_11pplg2/widget/navbar.dart';
 
 class FootballPage extends StatelessWidget {
-  final FootballController footballController= Get.put(FootballController());
+  // final FootballController footballController= Get.put(FootballController());
+  final footballController= Get.find<FootballController>();
   FootballPage({super.key});
 
   @override
@@ -27,7 +28,6 @@ class FootballPage extends StatelessWidget {
               title: Text(footballController.players[index].nama),
               subtitle: Text(
                 "Posisi ${footballController.players[index].posisi} - No : ${footballController.players[index].nomor}",
-          
               ),
               
               onTap: ()=>{Get.toNamed(AppRoutes.editPlayerPages, arguments: index)},

@@ -9,7 +9,8 @@ import 'package:latihan1_11pplg2/widget/register_Widget.dart';
 
 class CalculatorFragment extends StatelessWidget {
 CalculatorFragment({super.key});
-final CalculatorController calculatorController = Get.put(CalculatorController());
+// final CalculatorController calculatorController = Get.put(CalculatorController());
+final calculatorController=Get.find<CalculatorController>();
 
 
   @override

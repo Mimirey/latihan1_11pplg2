@@ -7,8 +7,8 @@ import 'package:latihan1_11pplg2/controller/mainMenu_controller.dart';
 
 class MainMenuPage extends StatelessWidget {
    MainMenuPage({super.key});
-
-   MainmenuController mainmenuController= Get.put(MainmenuController());
+  //  MainmenuController mainmenuController= Get.put(MainmenuController());
+  final mainmenuController=Get.find<MainmenuController>();
 
   @override
   Widget build(BuildContext context) {
